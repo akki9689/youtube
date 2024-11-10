@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/pngwing.com (1).png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Add your CSS styling here */
+        
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+    <title>YouTube Clone</title>
+</head>
+<body>
+    
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="./images/menu.png" class="menu-icon" alt="" srcset="">
+            <img src="./images/logo.png" class="logo" alt="" srcset="">
+        </div>
+        <div class="nav-middle flex-div">
+           
+           <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search for videos...">
+            <button id="myBtn" onkeypress="searchVideos()" onclick="searchVideos()">Search</button>
+        </div>
+           
+           <img src="./images/voice-search.png" class="mic-icon" alt="" srcset="">
+        </div>
+        <div class="nav-right flex-div">
+            <img src="./images/upload.png" alt="" srcset="">
+            <img src="./images/more.png" alt="" srcset="">
+            <img src="./images/notification.png" alt="" srcset="">
+            <img src="./images/user.png" class="user-icon" alt="user" srcset="">
+        </div>
+    </nav>
+
+    <!-- Side Bar -->
+
+     <div class="sidebar">
+         <div class="shortcut-links">
+             <a href="#"><img src="./images/home.png"><p>Home</p></a>
+             <a href="#"><img src="./images/explore.png"><p>explore</p></a>
+             <a href="#"><img src="./images/subscriprion.png"><p>subscriprion</p></a>
+             <hr>
+             <a href="#"><img src="./images/library.png"><p>library</p></a>
+             <a href="#"><img src="./images/history.png"><p>History</p></a>
+             <a href="#"><img src="./images/playlist.png"><p>playlist</p></a>
+             <a href="#"><img src="./images/messages.png"><p>messages</p></a>
+             <a onclick="addSuscriblist()" href="#"><img src="./images/show-more.png"><p>Show more</p></a>
+             <hr>
+            </div>
+          <div class="subscribed-list">
+              <h3>SUBSCRIPTIONS</h3>
+              <a href="#"><img src="./images/Jack.png"><p>Jack   &bull;</p></a>
+              <a href="#"><img src="./images/simon.png"><p>simon </p></a>
+              <a href="#"><img src="./images/tom.png"><p>Tom  &bull;</p></a>
+              <a href="#"><img src="./images/megan.png"><p>Megan Fox  &bull;</p></a>
+              <a href="#"><img src="./images/cameron.png"><p>Cameron Green </p></a>
+            
+            </div>
+        </div>
+
+<!-- Main Body -->
+
+ <!-- conntainer start -->
+<div class="container">
+   
+    <div class="tabs">
+        <button class="tab-button active-tab" onclick="fetchYouTubeData('')">All</button>
+        <button class="tab-button" onclick="fetchYouTubeData('CSS')">CSS</button>
+        <button class="tab-button" onclick="fetchYouTubeData('News')">News</button>
+        <button class="tab-button" onclick="fetchYouTubeData('Cricket')">Cricket</button>
+        <button class="tab-button" onclick="fetchYouTubeData('Serial')">Serial</button>
+        <button class="tab-button" onclick="fetchYouTubeData('Movies')">Movies</button>
+    </div>
+    <div id="videos-container"></div>
+    
+    <div id="videos-container"></div>
+</div> 
+
+
+<!-- container end -->
+
+
+ <!-- YouTube player container -->
+ <div id="player"></div>
+
+
+ <!-- Videos container -->
+ <div id="videos-container"></div>
+
+ <!-- Load the IFrame Player API code asynchronously. -->
+<div id="videos-container"></div>
+<script src="./script.js"></script>
+<script src="sidebar.js"></script>
+
+
+</body>
+</html>
